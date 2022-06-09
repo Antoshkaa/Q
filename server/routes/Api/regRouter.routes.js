@@ -10,13 +10,13 @@ const {
 
 router.route('/')
   .post(async (req, res) => {
+    console.log(req.body);
     try {
       const {
         user_name,
         user_email,
         user_password,
       } = req.body;
-
       const user = await User.findOne({
         where: {
           user_email,

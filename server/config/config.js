@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
-const cors = require('cors');
+// const cors = require('cors');
 
 const local = (req, res, next) => {
   if (req.session.uid) {
@@ -33,7 +33,7 @@ const config = (app) => {
   }));
   app.use(session(sessionConfig));
   app.use(local);
-  app.use(cors());
+  // app.use(cors({ origin: 'http://localhost:3000' }));
 };
 
 module.exports = config;
