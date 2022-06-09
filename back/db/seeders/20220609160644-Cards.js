@@ -67,7 +67,7 @@ module.exports = {
         },
         {
           card_question: 'Ерунда',
-          card_answer: 'lalaila',
+          card_answer: 'Что обычно не работает внизу ?',
           card_point: 200,
           id_topic: 2,
           createdAt: new Date(),
