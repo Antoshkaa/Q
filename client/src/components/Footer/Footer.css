@@ -1,0 +1,22 @@
+.footer {
+  font-family: 1rem/1.5 var(--bs-font-sans-serif);
+  height: 50px;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: RGB(33, 37, 41);
+   color: white;
+   text-align: center;
+}
+.footer p {
+  color: rgb(154, 154, 154);
+  padding-top: 12px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Hind', sans-serif;
+}
+
+.styling {
+  color: rgb(160, 160, 160);
+}
