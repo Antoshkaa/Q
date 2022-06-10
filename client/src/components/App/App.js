@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Footer from "../Footer/Footer";
 import HomePage from "../HomePage/HomePage";
 import Login from "../Login/Login";
 import Navb from "../Navb/Navb";
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
