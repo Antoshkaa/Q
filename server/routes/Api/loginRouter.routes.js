@@ -13,7 +13,7 @@ router.route('/')
         user_email,
         user_password, // обычный
       } = req.body;
-
+      console.log(req.body);
       const user = await User.findOne({
         where: {
           user_email,
@@ -28,7 +28,7 @@ router.route('/')
           req.session.user = user;
           res.status(200).json({
             // message: 'Вы вошли в свой аккаунт',
-            user
+            user,
           });
         } else {
           res.status(401).json({
