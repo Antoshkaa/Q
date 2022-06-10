@@ -5,6 +5,7 @@ import Login from "../Login/Login";
 import Navb from "../Navb/Navb";
 import Registration from "../Registration/Registration";
 
+
 function App() {
   return (
     <div>
